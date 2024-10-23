@@ -36,4 +36,11 @@ $utilities: map-merge(
 @import "./pages/index.scss";
 @import "./pages/wine-content.scss";
 @import "./pages/barsearch";
-@import "/assets/scss/pages/recipessearch";
+@import "./pages/recipessearch";
+@import "./pages/about";
+
+@import "./pages/memberarea";
+
+@import "./pages/member-login";
+@import "./pages/member-signup";
+
