@@ -1,3 +1,9 @@
+// *,
+// *::after,
+// *::before {
+//   outline: 1px solid white;
+// }
+
 // 定義變數
 $medium: 768px;
 $large: 992px;
@@ -15,7 +21,6 @@ $x-large: 1200px;
   padding: 284px 0 100px;
   background-size: cover;
   background-position: center;
-  margin-top: -105px;
 
   @include respond-to($medium) {
     padding: 160px 0 76px;
@@ -174,9 +179,11 @@ $x-large: 1200px;
   // border: 1px solid #a00;
   padding: 120px 0;
   color: $primary-1;
+
   @include respond-to($medium) {
     padding: 40px 0;
   }
+
   .swiper {
     // width: 100%;
     .swiper-wrapper {
@@ -185,9 +192,11 @@ $x-large: 1200px;
         // margin: auto;
         // text-align: start;
         padding-top: 40px;
+
         @include respond-to($medium) {
           padding-top: 0;
         }
+
         .popularBarsItem {
           background-position: center;
           background-size: cover;
@@ -196,11 +205,13 @@ $x-large: 1200px;
           margin: auto;
           // min-height: 692px;
           aspect-ratio: 437 / 692;
+
           @include respond-to($medium) {
             max-width: 230px;
             // min-height: 325px;
             padding: 28px 24px 24px;
           }
+
           cursor: pointer;
           transition: transform 0.3s;
 
@@ -231,6 +242,7 @@ $x-large: 1200px;
           .barIntro {
             opacity: 0;
             transition: 0.7s;
+
             @include respond-to($medium) {
               opacity: 1;
             }
@@ -266,6 +278,7 @@ $x-large: 1200px;
     .swiper-button-prev {
       width: auto;
       height: auto;
+
       @include respond-to($medium) {
         display: none;
       }
@@ -284,6 +297,7 @@ $x-large: 1200px;
       &:hover {
         background-color: $primary-1;
         filter: brightness(0.8);
+
         .material-symbols-outlined {
           color: $primary-4;
         }
@@ -326,11 +340,13 @@ $x-large: 1200px;
 
       .pic {
         position: relative;
+
         img {
           border-radius: 1000px 1000px 0 0;
           object-fit: cover;
           object-position: center;
         }
+
         &::before {
           content: "";
           position: absolute;
@@ -399,6 +415,10 @@ $x-large: 1200px;
 // 周圍最新活動
 
 .nearby-event {
+  .eng-font {
+    line-height: 1.5;
+  }
+
   .swiper-wrapper .swipe-slide {
     margin: 0 auto;
   }
@@ -407,18 +427,37 @@ $x-large: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 
     & img {
       position: absolute;
       width: 437px;
       height: 924px;
       object-fit: cover;
+      filter: brightness(50%);
     }
 
     .card-body {
       width: 437px;
       height: 924px;
       position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .event-date {
+        display: flex;
+        justify-content: space-between;
+        width: 159px;
+      }
+
+      .event-more {
+        &:hover {
+          filter: brightness(50%);
+          transition: 0.4s;
+        }
+      }
     }
   }
 
@@ -453,6 +492,7 @@ $x-large: 1200px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: 0.4s;
 
     &:hover {
       filter: brightness(0.8);
@@ -467,6 +507,8 @@ $x-large: 1200px;
 
 @media (max-width: 992px) {
   .nearby-event {
+    background-color: none;
+
     .nearby-card {
       & img {
         width: 241px;
@@ -476,82 +518,16 @@ $x-large: 1200px;
       .card-body {
         width: 241px;
         height: 454px;
+
+        .event-date {
+          width: 85px;
+        }
       }
     }
 
     .swiper-button-next,
     .swiper-button-prev {
       display: none;
-    }
-  }
-}
-
-.bar-join-member {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(/assets/images/webinfo-3.jpg);
-
-  padding-top: 325px;
-  padding-bottom: 325px;
-  background-size: cover;
-  background-position: center;
-
-  .join-input {
-    &-text {
-      width: 597px;
-      border: 0.8px solid $primary-1;
-
-      .input-group-text {
-        background: transparent;
-        border: none;
-
-        .material-symbols-outlined {
-          font-size: 36px;
-          font-variation-settings: "FILL" 1;
-        }
-      }
-
-      .form-control {
-        border: none;
-        background: transparent;
-
-        &::placeholder {
-          color: $primary-1;
-          font-size: 24px;
-        }
-      }
-    }
-
-    &-btn {
-      color: $primary-1;
-      background: $primary-3;
-      padding: 24px 40px;
-      border: 1px solid $primary-3;
-      border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
-      margin-left: 40px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .bar-join-member {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    .join-input {
-      width: 223px;
-      flex-wrap: wrap;
-
-      .form-control {
-        &::placeholder {
-          font-size: 12px;
-        }
-      }
-
-      &-btn {
-        padding: 8px 12px;
-        margin-left: 0;
-        margin-top: 16px;
-      }
     }
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>recipse</title>
   </head>
 
@@ -13,26 +14,32 @@
       <div class="container">
         <div class="banner-rs">
           <h6
-            class="fw-bold text-primary-1 position-relative text-center z-3 py-lg-6 my-lg-180 mt-13 fs-lg-1"
+            data-aos="fade-up"
+            class="fw-bold text-primary-1 position-relative text-center z-3 fs-lg-1 fs-md-4 mb-md-11 mb-6"
           >
             在家調出酒吧級質感，品味專屬調酒
           </h6>
 
-          <div class="input-group mx-auto">
+          <div
+            data-aos="fade-up"
+            class="input-group boder-primary-1 d-flex align-items-center mt-lg-8"
+          >
             <label for="search" class="form-label d-none">搜尋</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control fs-lg-6 fs-md-8 fs-9"
               id="search"
               placeholder="立即搜尋"
               aria-label="立即搜尋"
               aria-describedby="button-addon2"
             />
-            <button class="btn button-addon2" type="button">
-              <span href="#" class="material-symbols-outlined text-primary-1"
+            <a href="#" class="p-lg-3 p-md-2 p-1">
+              <span
+                href="#"
+                class="material-symbols-outlined text-primary-1 align-middle fs-lg-5 fs-md-7 fs-8"
                 >search</span
               >
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -44,6 +51,7 @@
         <div class="row px-lg-0 px-6 mb-6">
           <div class="col-12 mt-lg-15 mt-10">
             <h2
+              data-aos="fade-up"
               class="fw-bold text-primary-1 text-center fs-lg-2 fs-7 mb-lg-15 mb-6"
             >
               輕鬆篩選，找到你的完美調酒
@@ -430,7 +438,7 @@
                 >
                   <button
                     type="button"
-                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1 text-nowrap"
+                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 me-3 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1 text-nowrap"
                   >
                     琴酒<span
                       class="material-symbols-outlined align-middle fs-10 fs-lg-6 ms-3"
@@ -440,7 +448,7 @@
                   </button>
                   <button
                     type="button"
-                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1"
+                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 me-3 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1 text-nowrap"
                   >
                     甜酒<span
                       class="material-symbols-outlined align-middle fs-10 fs-lg-6 ms-3"
@@ -450,7 +458,7 @@
                   </button>
                   <button
                     type="button"
-                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1"
+                    class="btn active btn-outline-primary-3 rounded-pill me-lg-6 fs-lg-6 fs-10 py-lg-3 px-lg-5 text-primary-1 text-nowrap"
                   >
                     水果<span
                       class="material-symbols-outlined align-middle fs-10 fs-lg-6 ms-3"
@@ -461,9 +469,7 @@
                 </div>
               </div>
 
-              <div
-                class="col-lg-5 col-md-7 col-5 d-flex align-items-center justify-content-end"
-              >
+              <div class="col d-flex align-items-center justify-content-end">
                 <h8 class="text-primary-1 me-lg-6 me-3 ms-10 fs-lg-8 fs-10"
                   >清除所有條件</h8
                 >
@@ -504,7 +510,7 @@
           class="row gx-lg-13 gy-lg-13 gy-md-10 gy-0 gx-md-6 mb-lg-13 flex-md-wrap flex-nowrap overflow-x-scroll scrollBar"
         >
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card position-relative">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -593,7 +599,7 @@
                         alt="image-Boulevardier"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -606,7 +612,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -698,7 +704,7 @@
                         alt="image-junglebird"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -711,7 +717,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -799,7 +805,7 @@
                         alt="image-junglebird"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -812,7 +818,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -899,7 +905,7 @@
                         alt="image-junglebird"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -912,7 +918,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -1001,7 +1007,7 @@
                         alt="image-junglebird"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -1014,7 +1020,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -1103,7 +1109,7 @@
                         alt="image-junglebird"
                       />
                       <a
-                        href="/pages/wine-content.html"
+                        href="wine-content.html"
                         class="cardBtn cardBtn-primary-4 rounded-circle eng-font"
                         ><span class="material-symbols-outlined align-middle">
                           arrow_forward
@@ -1174,7 +1180,10 @@
             每一杯，都有故事
           </h2>
         </div>
-        <div class="row gx-0 mb-lg-14 mb-9 gradient-border">
+        <div
+          data-aos="fade-right"
+          class="row gx-0 mb-lg-14 mb-9 gradient-border"
+        >
           <div class="col-lg-3 col bg-primary-4 pb-lg-0 pb-10">
             <div class="cross-container">
               <div class="cross-1">
@@ -1206,59 +1215,65 @@
               <div class="swiper-wrapper eng-font">
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-daiquiri.png"
-                      alt="image-daiquiri"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-daiquiri.png"
+                        alt="image-daiquiri"
+                    /></a>
                   </div>
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     奧綸莉 Daiquiri
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
-                    <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                    <a href="#"
+                      ><span
+                        class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
+                      >
+                        thumb_up
+                      </span></a
                     >
-                      thumb_up
-                    </span>
                     118
                     <span class="px-lg-3">|</span>
-                    <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                    <a href="#"
+                      ><span
+                        class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
+                      >
+                        favorite
+                      </span></a
                     >
-                      favorite
-                    </span>
                     99
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-holdwine.png"
-                      alt="image-holdwine"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100">
+                      <img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-holdwine.png"
+                        alt="image-holdwine"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     琴湯尼 Gin Tonic
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       thumb_up
                     </span>
                     132
                     <span class="px-lg-3">|</span>
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       favorite
                     </span>
@@ -1267,29 +1282,32 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-manhattam.png"
-                      alt="image-manhattam"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100">
+                      <img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-manhattam.png"
+                        alt="image-manhattam"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6 fs-8">
+                  <div
+                    class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2 fs-8"
+                  >
                     曼哈頓 Manhattam
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       thumb_up
                     </span>
                     112
                     <span class="px-lg-3">|</span>
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       favorite
                     </span>
@@ -1298,59 +1316,65 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-daiquiri.png"
-                      alt="image-daiquiri"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-daiquiri.png"
+                        alt="image-daiquiri"
+                    /></a>
                   </div>
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     奧綸莉 Daiquiri
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
-                    <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                    <a href="#"
+                      ><span
+                        class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
+                      >
+                        thumb_up
+                      </span></a
                     >
-                      thumb_up
-                    </span>
                     118
                     <span class="px-lg-3">|</span>
-                    <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                    <a href="#"
+                      ><span
+                        class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
+                      >
+                        favorite
+                      </span></a
                     >
-                      favorite
-                    </span>
                     99
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-holdwine.png"
-                      alt="image-holdwine"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100">
+                      <img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-holdwine.png"
+                        alt="image-holdwine"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     琴湯尼 Gin Tonic
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       thumb_up
                     </span>
                     132
                     <span class="px-lg-3">|</span>
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       favorite
                     </span>
@@ -1359,29 +1383,32 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-manhattam.png"
-                      alt="image-manhattam"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100">
+                      <img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-manhattam.png"
+                        alt="image-manhattam"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6 fs-8">
+                  <div
+                    class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2 fs-8"
+                  >
                     曼哈頓 Manhattam
                   </div>
 
                   <div
-                    class="likes text-white mt-lg-4 fs-9 fs-lg-7 text-nowrap"
+                    class="likes text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7 text-nowrap"
                   >
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       thumb_up
                     </span>
                     112
                     <span class="px-lg-3">|</span>
                     <span
-                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6 py-1"
+                      class="material-symbols-outlined align-top px-lg-2 fs-9 fs-lg-6"
                     >
                       favorite
                     </span>
@@ -1400,7 +1427,10 @@
             </div>
           </div>
         </div>
-        <div class="row gx-0 mb-lg-14 mb-13 gradient-border">
+        <div
+          data-aos="fade-right"
+          class="row gx-0 mb-lg-14 mb-13 gradient-border"
+        >
           <div class="col-lg-3 col bg-primary-1 pb-lg-0 pb-10">
             <div class="cross-container">
               <div class="cross-1">
@@ -1433,17 +1463,22 @@
               <div class="swiper-wrapper eng-font">
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-margarita.png"
-                      alt="image-margarita"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-margarita.png"
+                        alt="image-margarita"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 fs-8 mt-lg-6">
+                  <div
+                    class="title text-white fs-lg-6 fs-8 mt-lg-6 mt-md-4 mt-2"
+                  >
                     瑪格麗特 Margarita
                   </div>
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1455,17 +1490,22 @@
 
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-vieux carre.png"
-                      alt="image-vieux"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-vieux carre.png"
+                        alt="image-vieux"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 fs-8 mt-lg-6">
+                  <div
+                    class="title text-white fs-lg-6 fs-8 mt-lg-6 mt-md-4 mt-2"
+                  >
                     老廣場 Vieux Carre
                   </div>
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1476,18 +1516,21 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-godfather.png"
-                      alt="image-godfather"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-godfather.png"
+                        alt="image-godfather"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     教父 Godfather
                   </div>
 
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1498,17 +1541,22 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-margarita.png"
-                      alt="image-margarita"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-margarita.png"
+                        alt="image-margarita"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 fs-8 mt-lg-6">
+                  <div
+                    class="title text-white fs-lg-6 fs-8 mt-lg-6 mt-md-4 mt-2"
+                  >
                     瑪格麗特 Margarita
                   </div>
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1520,17 +1568,22 @@
 
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-vieux carre.png"
-                      alt="image-vieux"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-vieux carre.png"
+                        alt="image-vieux"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 fs-8 mt-lg-6">
+                  <div
+                    class="title text-white fs-lg-6 fs-8 mt-lg-6 mt-md-4 mt-2"
+                  >
                     老廣場 Vieux Carre
                   </div>
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1541,18 +1594,21 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-container">
-                    <img
-                      class="card-img1 img-gradient-border d-block"
-                      src="/assets/images/image-godfather.png"
-                      alt="image-godfather"
-                    />
+                    <a href="wine-content.html" class="h-100 w-100"
+                      ><img
+                        class="card-img1 img-gradient-border d-block"
+                        src="/assets/images/image-godfather.png"
+                        alt="image-godfather"
+                    /></a>
                   </div>
 
-                  <div class="title text-white fs-lg-6 mt-lg-6">
+                  <div class="title text-white fs-lg-6 mt-lg-6 mt-md-4 mt-2">
                     教父 Godfather
                   </div>
 
-                  <div class="commits text-white mt-lg-4 fs-9 fs-lg-7">
+                  <div
+                    class="commits text-white mt-lg-4 mt-md-4 mt-2 fs-9 fs-lg-7"
+                  >
                     <span
                       class="material-symbols-outlined text-white fs-lg-6 fs-9 align-middle"
                     >
@@ -1578,7 +1634,11 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
